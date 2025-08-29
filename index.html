@@ -126,127 +126,6 @@
             background: #333;
         }
 
-        .scheduling-section {
-            max-width: 1200px;
-            margin: 120px auto 0;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        .scheduling-content {
-            flex: 1;
-            padding: 20px;
-        }
-
-        .scheduling-content h1 {
-            font-size: 2.5em;
-            font-weight: bold;
-            color: #000;
-            margin-bottom: 10px;
-        }
-
-        .scheduling-content p {
-            font-size: 1em;
-            color: #666;
-            margin-bottom: 20px;
-        }
-
-        .scheduling-content .sign-up-btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #000;
-            color: #fff;
-            border-radius: 8px;
-            font-size: 1em;
-        }
-
-        .scheduling-content .sign-up-btn.secondary {
-            background: #fff;
-            color: #000;
-            border: 1px solid #000;
-            margin-left: 10px;
-        }
-
-        .scheduling-widget {
-            flex: 1;
-            padding: 20px;
-            background: #f9f9f9;
-            border-radius: 8px;
-            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
-        }
-
-        .scheduling-widget .profile {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-
-        .scheduling-widget .profile img {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
-
-        .scheduling-widget .profile span {
-            font-weight: bold;
-        }
-
-        .scheduling-widget .event-title {
-            font-size: 1.2em;
-            margin-bottom: 5px;
-        }
-
-        .scheduling-widget .event-desc {
-            color: #666;
-            margin-bottom: 10px;
-        }
-
-        .scheduling-widget .time-location {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 10px;
-        }
-
-        .scheduling-widget .calendar {
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            padding: 10px;
-        }
-
-        .scheduling-widget .calendar table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        .scheduling-widget .calendar th,
-        .scheduling-widget .calendar td {
-            text-align: center;
-            padding: 5px;
-        }
-
-        .scheduling-widget .calendar th {
-            background: #f0f0f0;
-        }
-
-        .scheduling-widget .ratings {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-top: 10px;
-        }
-
-        .scheduling-widget .ratings img {
-            width: 20px;
-            height: 20px;
-        }
-
         .trusted {
             background: #F4F4F4;
             padding: 1rem 2rem;
@@ -585,7 +464,6 @@
         .feature-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            /* 4 per row */
             gap: 20px;
             margin-top: 40px;
         }
@@ -621,7 +499,6 @@
             color: #666;
         }
 
-        /* When active, hide icon + title, show detail */
         .feature-card.active .feature-icon,
         .feature-card.active .feature-title {
             display: none;
@@ -631,7 +508,6 @@
             display: block;
         }
 
-        /* Responsive */
         @media (max-width: 992px) {
             .feature-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -644,7 +520,7 @@
             }
         }
 
-        .container2{
+        .container2 {
             background-color: white;
             padding: 30px;
             border-radius: 10px;
@@ -652,7 +528,6 @@
             max-width: 900px;
             width: 100%;
             margin: 60px 400px;
-
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
@@ -751,6 +626,200 @@
                 align-items: center;
             }
         }
+
+        /* Styles from second file for scheduling section */
+        .scheduling-container {
+            background: white;
+            display: flex;
+            max-width: 1200px;
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            margin: 120px auto 0;
+            font-family: Inter, Arial, sans-serif;
+        }
+
+        .left {
+            flex: 1;
+            padding: 50px 40px;
+        }
+
+        .pill {
+            display: inline-block;
+            font-size: 14px;
+            color: #374151;
+            background: #f3f4f6;
+            padding: 6px 12px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        .left h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #111827;
+            line-height: 1.1;
+        }
+
+        .left p {
+            color: #6b7280;
+            font-size: 16px;
+            margin-bottom: 30px;
+            max-width: 400px;
+        }
+
+        .btn.google {
+            background: #111827;
+            color: white;
+        }
+
+        .btn.email {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            color: #111827;
+        }
+
+        .btn img {
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        .note {
+            font-size: 14px;
+            color: #6b7280;
+            margin-top: 10px;
+        }
+
+        .right {
+            flex: 1;
+            border-left: 1px solid #e5e7eb;
+            padding: 30px;
+        }
+
+        .profile {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .profile img {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+        }
+
+        .profile h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #111827;
+        }
+
+        .profile p {
+            font-size: 14px;
+            color: #6b7280;
+            margin-top: 4px;
+        }
+
+        .durations {
+            display: flex;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .durations span {
+            padding: 6px 12px;
+            border-radius: 6px;
+            background: #f3f4f6;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .durations span.active {
+            background: #111827;
+            color: white;
+        }
+
+        .calendar {
+            margin-top: 20px;
+        }
+
+        .cal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .cal-header h4 {
+            font-weight: 600;
+        }
+
+        .weekdays,
+        .days {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            text-align: center;
+            gap: 6px;
+        }
+
+        .weekdays div {
+            font-size: 12px;
+            color: #6b7280;
+            padding: 6px 0;
+        }
+
+        .days div {
+            padding: 12px 0;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .days div:hover {
+            background: #f3f4f6;
+        }
+
+        .days .active {
+            background: #111827;
+            color: white;
+        }
+
+        .days .disabled {
+            color: #d1d5db;
+            cursor: not-allowed;
+        }
+
+        .ratings {
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            color: #6b7280;
+        }
+
+        .meeting-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .meeting-info span {
+            display: flex;
+            align-items: center;
+            padding: 6px 12px;
+            border-radius: 6px;
+            background: #f3f4f6;
+            font-size: 14px;
+        }
+
+        .meeting-info img {
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+        }
     </style>
 </head>
 <body>
@@ -811,44 +880,55 @@
         </nav>
     </header>
 
-    <section class="scheduling-section">
-        <div class="scheduling-content">
-            <span style="background: #f0f0f0; padding: 2px 8px; font-size: 0.8em; border-radius: 4px;">Cal.com launches v6.3</span>
+    <div class="scheduling-container">
+        <!-- Left Section -->
+        <div class="left">
+            <div class="pill">Cal.com launches v5.6 →</div>
             <h1>The better way to schedule your meetings</h1>
             <p>A fully customizable scheduling software for individuals, businesses taking calls and developers building scheduling platforms where users meet users.</p>
-            <a href="signup.html" class="sign-up-btn">Sign up with Google</a>
-            <a href="signup.html" class="sign-up-btn secondary">Sign up with email</a>
-            <p style="font-size: 0.9em; color: #666;">No credit card required</p>
+            <button class="btn google"><img src="https://www.svgrepo.com/show/475656/google-color.svg" alt=""> Sign up with Google</button>
+            <button class="btn email">Sign up with email →</button>
+            <div class="note">No credit card required</div>
         </div>
-        <div class="scheduling-widget">
+
+        <!-- Right Section -->
+        <div class="right">
             <div class="profile">
-                <img src="https://via.placeholder.com/30" alt="Profile picture of Denise Wilson">
-                <span>Denise Wilson</span>
+                <img id="profile-img" src="" alt="">
+                <div>
+                    <h3 id="meeting-title">Meeting</h3>
+                    <p id="meeting-desc">Description...</p>
+                    <div class="durations" id="durations"></div>
+                    <div class="meeting-info" id="meeting-info"></div>
+                </div>
             </div>
-            <div class="event-title">Property Viewing</div>
-            <div class="event-desc">Tour your potential dream home with our experienced real estate professionals.</div>
-            <div class="time-location">
-                <span>⏰ 30m</span>
-                <span>📍 Pine Realty Office</span>
-                <span>🌐 Australia/Sydney</span>
-            </div>
+
+            <!-- Calendar -->
             <div class="calendar">
-                <table role="grid" aria-labelledby="calendar-caption">
-                    <caption id="calendar-caption">May 2025 Calendar</caption>
-                    <tr><th scope="col">SUN</th><th scope="col">MON</th><th scope="col">TUE</th><th scope="col">WED</th><th scope="col">THU</th><th scope="col">FRI</th><th scope="col">SAT</th></tr>
-                    <tr><td>28</td><td>29</td><td>30</td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
-                    <tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr>
-                    <tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr>
-                    <tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr>
-                    <tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td></tr>
-                </table>
+                <div class="cal-header">
+                    <h4 id="cal-month">Month 2025</h4>
+                    <div>◀ ▶</div>
+                </div>
+                <div class="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="days" id="cal-days"></div>
             </div>
+
+            <!-- Ratings -->
             <div class="ratings">
-                <img src="https://via.placeholder.com/20/00FF00?text=★★★★★" alt="Trustpilot 5-star rating">
-                <img src="https://via.placeholder.com/20/FF0000?text=★★★" alt="Google 3-star rating">
+                ⭐⭐⭐⭐⭐ Trustpilot
+                ⭐⭐⭐⭐☆ Product Hunt
+                ⭐⭐⭐⭐☆ G2
             </div>
         </div>
-    </section>
+    </div>
 
     <section class="trusted">
         <p>Trusted by fast-growing <br>companies around the world</p>
@@ -1035,9 +1115,7 @@
             </div>
         </div>
         <div class="tools-content">
-            <div class="tools-box" id="toolsBox">
-                <!-- Tools will be dynamically inserted here -->
-            </div>
+            <div class="tools-box" id="toolsBox"></div>
         </div>
     </div>
 
@@ -1115,21 +1193,18 @@
 
         const cards = document.querySelectorAll('.feature-card');
 
-        // Handle click on cards
         cards.forEach(card => {
             card.addEventListener('click', (e) => {
-                e.stopPropagation(); // Prevent body click
+                e.stopPropagation();
                 cards.forEach(c => c.classList.remove('active'));
                 card.classList.add('active');
             });
         });
 
-        // Handle click on body to reset
         document.body.addEventListener('click', () => {
             cards.forEach(c => c.classList.remove('active'));
         });
 
-         // List of meeting tools (replace with actual logos or icons)
         const tools = [
             { name: "Salesforce", icon: "🎦" },
             { name: "Outlook", icon: "📹" },
@@ -1150,7 +1225,7 @@
         let ToolsIndex = 0;
 
         function updateTools() {
-            toolsBox.innerHTML = ''; // Clear current tools
+            toolsBox.innerHTML = '';
             const endIndex = Math.min(ToolsIndex + toolsPerPage, tools.length);
             for (let i = ToolsIndex; i < endIndex; i++) {
                 const toolDiv = document.createElement('div');
@@ -1159,14 +1234,104 @@
                 toolDiv.title = tools[i].name;
                 toolsBox.appendChild(toolDiv);
             }
-            ToolsIndex = (ToolsIndex + toolsPerPage) % tools.length; // Loop back to start
+            ToolsIndex = (ToolsIndex + toolsPerPage) % tools.length;
         }
 
-        // Initial display
         updateTools();
-
-        // Auto-change every 3 seconds
         setInterval(updateTools, 3000);
+
+        // Script from second file for profile and calendar
+        const profiles = [
+            {
+                img: "https://randomuser.me/api/portraits/men/32.jpg",
+                title: "Partnerships Meeting",
+                desc: "Agency, influencer, SaaS founder, or business? Let’s chat!",
+                durations: ["15m", "30m", "45m", "1h"],
+                location: "New York, NY",
+                meetingSoftwareName: "Zoom",
+                meetingSoftwareIcon: "https://www.svgrepo.com/show/326111/zoom.svg"
+            },
+            {
+                img: "https://randomuser.me/api/portraits/women/45.jpg",
+                title: "Investor Call",
+                desc: "Discuss funding opportunities and collaborations.",
+                durations: ["20m", "40m", "60m"],
+                location: "San Francisco, CA",
+                meetingSoftwareName: "Google Meet",
+                meetingSoftwareIcon: "https://www.svgrepo.com/show/353789/google-meet.svg"
+            },
+            {
+                img: "https://randomuser.me/api/portraits/men/75.jpg",
+                title: "Support Session",
+                desc: "Get technical help and onboarding support.",
+                durations: ["10m", "25m", "50m"],
+                location: "London, UK",
+                meetingSoftwareName: "Microsoft Teams",
+                meetingSoftwareIcon: "https://www.svgrepo.com/show/452077/teams.svg"
+            }
+        ];
+
+        let profileIndex = 0;
+
+        function renderProfile() {
+            const profile = profiles[profileIndex];
+            document.getElementById("profile-img").src = profile.img;
+            document.getElementById("meeting-title").innerText = profile.title;
+            document.getElementById("meeting-desc").innerText = profile.desc;
+
+            const durContainer = document.getElementById("durations");
+            durContainer.innerHTML = "";
+            profile.durations.forEach((d, i) => {
+                const span = document.createElement("span");
+                span.textContent = d;
+                if (i === 0) span.classList.add("active");
+                durContainer.appendChild(span);
+            });
+
+            const meetingInfoContainer = document.getElementById("meeting-info");
+            meetingInfoContainer.innerHTML = "";
+            const locationSpan = document.createElement("span");
+            locationSpan.textContent = profile.location;
+            meetingInfoContainer.appendChild(locationSpan);
+            const softwareSpan = document.createElement("span");
+            const softwareImg = document.createElement("img");
+            softwareImg.src = profile.meetingSoftwareIcon;
+            softwareImg.alt = `${profile.meetingSoftwareName} icon`;
+            softwareSpan.appendChild(softwareImg);
+            softwareSpan.appendChild(document.createTextNode(profile.meetingSoftwareName));
+            meetingInfoContainer.appendChild(softwareSpan);
+
+            const today = new Date();
+            today.setMonth(today.getMonth() + profileIndex);
+            const monthName = today.toLocaleString("default", { month: "long" });
+            document.getElementById("cal-month").innerText = `${monthName} ${today.getFullYear()}`;
+
+            const firstDay = new Date(today.getFullYear(), today.getMonth(), 1);
+            const lastDay = new Date(today.getFullYear(), today.getMonth() + 1, 0);
+            const daysDiv = document.getElementById("cal-days");
+            daysDiv.innerHTML = "";
+
+            for (let i = 0; i < firstDay.getDay(); i++) {
+                const div = document.createElement("div");
+                div.classList.add("disabled");
+                daysDiv.appendChild(div);
+            }
+
+            for (let d = 1; d <= lastDay.getDate(); d++) {
+                const div = document.createElement("div");
+                div.textContent = d;
+                if (d === 15) div.classList.add("active");
+                daysDiv.appendChild(div);
+            }
+        }
+
+        function nextProfile() {
+            profileIndex = (profileIndex + 1) % profiles.length;
+            renderProfile();
+        }
+
+        renderProfile();
+        setInterval(nextProfile, 5000);
     </script>
 </body>
 </html>
